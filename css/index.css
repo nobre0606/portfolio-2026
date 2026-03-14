@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Merriweather', serif;
+}
+
+/* HEADER */
+header {
+  min-height: 480px;
+  background-image: url(../imagens/header-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* NAV */
+.barra-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.titulo-nav {
+  margin-left: 23px;
+  color: white;
+}
+
+.menu-nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 40px;
+  gap: 30px;
+}
+
+.item-menu {
+  position: relative;
+}
+
+.botao-menu {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+}
+
+.link-menu {
+  color: white;
+  text-decoration: none;
+}
+
+/* DROPDOWN */
+.menu-drop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+}
+
+.item-menu:hover .menu-drop {
+  display: block;
+}
+
+.menu-drop li {
+  padding: 10px;
+}
+
+.menu-drop li:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu-drop a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* CONTEÚDO */
+.seçao1{
+  color: white;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.seçao1-texto {
+  width: 665px;
+  line-height: 2;
+}
+
+.seçao1-texto h2 {
+  font-size: xx-large;
+}
+
+.retrato-img img {
+  width: 267.6px;
+  height: 311px;
+}
