@@ -21,7 +21,12 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
   z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .titulo-nav {
@@ -49,6 +54,12 @@ body {
   font-weight: bold;
   font-family: 'Merriweather', serif;
   padding: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.botao-menu:hover {
+  color: #d1d1d1;
 }
 
 .link-menu {
@@ -59,13 +70,17 @@ body {
 /* DROPDOWN */
 .menu-drop {
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 160px;
+  min-width: 180px;
+  background-color: rgba(15, 15, 15, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
 }
 
 .item-menu:hover .menu-drop {
@@ -73,17 +88,20 @@ body {
 }
 
 .menu-drop li {
-  padding: 10px;
-}
-
-.menu-drop li:hover {
-  border-bottom: 2px solid white;
+  padding: 0;
 }
 
 .menu-drop a {
   color: white;
   text-decoration: none;
   display: block;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu-drop a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 25px;
 }
 
 /* SEÇÃO PRINCIPAL */
@@ -104,7 +122,8 @@ body {
 /* CARDS CENTRALIZADOS */
 .div-card-flex {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -114,11 +133,11 @@ body {
 }
 
 .atividade-preview {
-  width: 480px;
-  height: 331.5px;
+  width: 360px;
+  height: 250px;
 }
 
 .atividade-title {
-  width: 480px;
+  width: 360px;
   text-align: center;
 }
