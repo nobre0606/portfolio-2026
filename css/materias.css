@@ -141,3 +141,13 @@ body {
   width: 360px;
   text-align: center;
 }
+
+.atividade-descricao {
+  width: 360px;
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: 300;
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin-top: 4px;
+}
