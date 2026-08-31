@@ -23,8 +23,8 @@
             <div class="item-menu">
                 <button class="botao-menu">Técnico</button>
                 <ul class="menu-drop">
-                    <li><a href="tecnico-1trim.html">1º Tri</a></li>
-                    <li><a href="#">2º Tri</a></li>
+                    <li><a href="tecnico-1trim.html#1trim">1º Tri</a></li>
+                    <li><a href="tecnico-1trim.html#2trim">2º Tri</a></li>
                     <li><a href="#">3º Tri</a></li>
                 </ul>
             </div>
@@ -44,7 +44,12 @@
     </nav>
 </header>
 
-<div class="secao1">
+<div class="botoes-trimestre">
+    <button class="btn-trimestre ativo" data-trim="1trim" onclick="alternarTrimestre('1trim')">1º Trimestre</button>
+    <button class="btn-trimestre" data-trim="2trim" onclick="alternarTrimestre('2trim')">2º Trimestre</button>
+</div>
+
+<div id="1trim" class="secao1 conteudo-trimestre ativo">
 
     <H1 class="secao1-title">1º Trimestre</H1>
     <div class="div-card-flex">
@@ -82,8 +87,42 @@
         </div>
 
     </div>
+
+    <div class="habilidades-container" style="text-align: center; margin-top: 40px;">
+        <h1 class="secao1-title" style="text-align: center; width: 100%;">Habilidades trabalhadas durante o trimestre</h1>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <h4 class="atividade-habilidades">H4 H14 H22</h4>
+        </div>
+    </div>
     
 </div>
+
+<div id="2trim" class="secao1 conteudo-trimestre">
+
+    <H1 class="secao1-title">2º Trimestre</H1>
+    <div class="div-card-flex">
+
+        <div class="card-atividade">
+            <div class="atividade-preview" style="display: flex; align-items: center; justify-content: center; border: 2px dashed rgba(255,255,255,0.2); border-radius: 8px; margin-top: 1.6em; margin-bottom: 0.9em; background: rgba(255,255,255,0.03);">
+                <p style="color: #888; font-style: italic;">Atividade em desenvolvimento</p>
+            </div>  
+
+            <h1 class="atividade-title">Atividades do 2º Trimestre</h1>
+            <h4 class="atividade-habilidades">Habilidades: Em breve</h4>
+            <p class="atividade-descricao">Espaço reservado para a inclusão das atividades e projetos realizados no 2º trimestre da disciplina de Linguagens.</p>
+        </div>
+
+    </div>
+
+    <div class="habilidades-container" style="text-align: center; margin-top: 40px;">
+        <h1 class="secao1-title" style="text-align: center; width: 100%;">Habilidades trabalhadas durante o trimestre</h1>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <h4 class="atividade-habilidades">Em breve</h4>
+        </div>
+    </div>
+    
+</div>
+
 
 <script src="script.js"></script>
 </body>

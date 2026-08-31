@@ -23,8 +23,8 @@
             <div class="item-menu">
                 <button class="botao-menu">Técnico</button>
                 <ul class="menu-drop">
-                    <li><a href="tecnico-1trim.html">1º Tri</a></li>
-                    <li><a href="#">2º Tri</a></li>
+                    <li><a href="tecnico-1trim.html#1trim">1º Tri</a></li>
+                    <li><a href="tecnico-1trim.html#2trim">2º Tri</a></li>
                     <li><a href="#">3º Tri</a></li>
                 </ul>
             </div>
@@ -44,7 +44,12 @@
     </nav>
 </header>
 
-<div class="secao1">
+<div class="botoes-trimestre">
+    <button class="btn-trimestre ativo" data-trim="1trim" onclick="alternarTrimestre('1trim')">1º Trimestre</button>
+    <button class="btn-trimestre" data-trim="2trim" onclick="alternarTrimestre('2trim')">2º Trimestre</button>
+</div>
+
+<div id="1trim" class="secao1 conteudo-trimestre ativo">
 
     <H1 class="secao1-title">1º Trimestre</H1>
     <div class="div-card-flex">
@@ -110,6 +115,68 @@
     </div>
     
 </div>
+
+<div id="2trim" class="secao1 conteudo-trimestre">
+
+    <H1 class="secao1-title">2º Trimestre</H1>
+    <div class="div-card-flex">
+
+        <div class="card-atividade">
+            <div class="atividade-preview">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAHJu8utPec/OpojvL9YUVkGuH8yeg4rGg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>  
+
+            <h1 class="atividade-title">Cinema e Totalitarismo</h1>
+            <h4 class="atividade-habilidades">Habilidades: H10, H22, H26, H27</h4>
+        </div>
+
+        <div class="card-atividade">
+            <div class="atividade-preview">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAHT4nDldAA/S7tOqW0bhEuk_6XEpHBqog/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>  
+
+            <h1 class="atividade-title">Dossiê Histórico: Blitzkrieg</h1>
+            <h4 class="atividade-habilidades">Habilidades: Não mencionado</h4>
+        </div>
+
+        <div class="card-atividade">
+            <div class="atividade-preview">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAHNA4-uoAs/UTx6Bqvv1ZOo2TZCRl_q_Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
+            </div>  
+
+            <h1 class="atividade-title">Desumanização dos Idosos</h1>
+            <h4 class="atividade-habilidades">Habilidades: Não mencionado</h4>
+        </div>
+
+    </div>
+
+    <div class="habilidades-container" style="text-align: center; margin-top: 40px;">
+        <h1 class="secao1-title" style="text-align: center; width: 100%;">Habilidades trabalhadas durante o trimestre</h1>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <h4 class="atividade-habilidades">H10, H22, H26, H27</h4>
+        </div>
+    </div>
+    
+</div>
+
 
 <script src="script.js"></script>
 </body>
